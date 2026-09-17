@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-family-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #174FC7;
+  --color-primary-dark: #0B2F70;
+  --color-primary-light: #EEF4FF;
+  --color-primary-mid: #4070E0;
+  --color-site-bg: #F8FAFD;
+  --color-site-border: #E4EAF2;
+  --color-site-text: #111827;
+  --color-site-muted: #667085;
+  --color-site-success: #16834B;
+  --color-site-success-bg: #ECFDF5;
+}
+
+body {
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  background-color: #F8FAFD;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: #E4EAF2 transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomSlow {
+  from { transform: scale(1); }
+  to { transform: scale(1.07); }
+}
+
+@keyframes crossfadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.55s ease-out forwards;
+}
+
+.animate-zoom-slow {
+  animation: zoomSlow 8s ease-in-out forwards;
+}
+
+.animate-crossfade-in {
+  animation: crossfadeIn 1s ease-in-out forwards;
+}
+
+.hero-slide-active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide-inactive {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
