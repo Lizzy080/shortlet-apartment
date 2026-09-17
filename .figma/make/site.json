@@ -1,4 +1,4 @@
-{
+{{
   "description": "Streamline your project management with intuitive tools designed to boost productivity and simplify team collaboration for businesses of all sizes.",
   "robots": {
     "index": false
@@ -7,8 +7,3 @@
     "addBypassLinks": false,
     "ignoreReducedMotion": false
   }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> b25e226b0f54612adcfabbcf57f82b4a6b77b009
